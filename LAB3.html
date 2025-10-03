@@ -15,7 +15,6 @@
     <h1>Хэрэглэгчийн профайл засварлах</h1>
     
     <form action="#" method="post">
-        <!-- Хувийн мэдээлэл -->
         <fieldset>
             <legend>Хувийн мэдээлэл</legend>
             
@@ -59,7 +58,6 @@
                 <input type="color" id="favoriteColor" name="favoriteColor" value="#3498db">
             </div>
             
-            <!-- Хүйс болон Сошиал медиа зэрэгцүүлэн -->
             <div class="gender-social-container">
                 <!-- Хүйс (radio) -->
                 <div class="form-section">
@@ -78,7 +76,6 @@
                     </div>
                 </div>
 
-                <!-- Сошиал медиа (checkbox) -->
                 <div class="form-section">
                     <label>Сошиал медиа ашигладаг:</label>
                     <div class="option-container">
@@ -101,7 +98,6 @@
             </div>
         </fieldset>
         
-        <!-- Холбоо барих мэдээлэл -->
         <fieldset>
             <legend>Холбоо барих мэдээлэл</legend>
             
@@ -131,7 +127,6 @@
             </div>
         </fieldset>
         
-        <!-- Боловсрол -->
         <fieldset>
             <legend>Боловсрол</legend>
             
@@ -161,7 +156,6 @@
             </div>
         </fieldset>
         
-        <!-- Хобби ба сонирхол -->
         <fieldset>
             <legend>Хобби ба сонирхол</legend>
             
@@ -181,10 +175,8 @@
             </div>
         </fieldset>
         
-        <!-- Нууц талбар -->
         <input type="hidden" id="userId" name="userId" value="B242270058">
         
-        <!-- Товчлуурууд -->
         <div class="button-group">
             <button type="submit" class="submit">Хадгалах</button>
             <button type="reset" class="reset">Цэвэрлэх</button>
@@ -192,7 +184,6 @@
     </form>
 
     <script>
-        // Орон нутгийн цаг
         function updateLocalTime() {
             const now = new Date();
             const timeString = now.toLocaleTimeString('mn-MN', {
@@ -204,9 +195,9 @@
             document.getElementById('currentTime').textContent = timeString;
         }
 
-        // Цагыг шинэчлэх
         updateLocalTime();
         setInterval(updateLocalTime, 1000);
     </script>
 </body>
+
 </html>
