@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>LAB 3 - Хэрэглэгчийн профайл засварлах</title>
+    
+</head>
+<body>
+    <div class="local-time">
+        <span class="local-time-label">Орон нутгийн цаг:</span>
+        <span class="local-time-value" id="currentTime">--:--:--</span>
+    </div>
+
+    <h1>Хэрэглэгчийн профайл засварлах</h1>
+    
+    <form action="#" method="post">
+        <!-- Хувийн мэдээлэл -->
+        <fieldset>
+            <legend>Хувийн мэдээлэл</legend>
+            
+            <div class="form-section">
+                <label for="firstName">Өөрийн нэр:</label>
+                <input type="text" id="firstName" name="firstName" value="Мунхбаяр" required>
+            </div>
+            
+            <div class="form-section">
+                <label for="parentName">Эцэг/эхийн нэр:</label>
+                <input type="text" id="parentName" name="parentName" value="Нямтуул">
+            </div>
+            
+            <div class="form-section">
+                <label for="lastName">Ургийн овог:</label>
+                <input type="text" id="lastName" name="lastName" value="Их мээрэн">
+            </div>
+            
+            <div class="form-section">
+                <label for="birthDate">Төрсөн огноо:</label>
+                <input type="date" id="birthDate" name="birthDate" value="2004-05-15">
+            </div>
+            
+            <div class="form-section">
+                <label for="birthTime">Төрсөн цаг:</label>
+                <input type="time" id="birthTime" name="birthTime" value="08:30">
+            </div>
+            
+            <div class="form-section">
+                <label for="age">Нас:</label>
+                <input type="number" id="age" name="age" min="1" max="120" value="20">
+            </div>
+            
+            <div class="form-section">
+                <label for="birthPlace">Төрсөн газар:</label>
+                <input type="text" id="birthPlace" name="birthPlace" value="Увс аймаг, Улаангом сум">
+            </div>
+            
+            <div class="form-section">
+                <label for="favoriteColor">Дуртай өнгө:</label>
+                <input type="color" id="favoriteColor" name="favoriteColor" value="#3498db">
+            </div>
+            
+            <!-- Хүйс болон Сошиал медиа зэрэгцүүлэн -->
+            <div class="gender-social-container">
+                <!-- Хүйс (radio) -->
+                <div class="form-section">
+                    <label>Хүйс:</label>
+                    <div class="option-container">
+                        <div class="radio-group">
+                            <div>
+                                <input type="radio" id="male" name="gender" value="male" checked>
+                                <label for="male" class="inline">Эрэгтэй</label>
+                            </div>
+                            <div>
+                                <input type="radio" id="female" name="gender" value="female">
+                                <label for="female" class="inline">Эмэгтэй</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Сошиал медиа (checkbox) -->
+                <div class="form-section">
+                    <label>Сошиал медиа ашигладаг:</label>
+                    <div class="option-container">
+                        <div class="checkbox-group">
+                            <div>
+                                <input type="checkbox" id="facebook" name="socialMedia" value="facebook" checked>
+                                <label for="facebook" class="inline">Facebook</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="instagram" name="socialMedia" value="instagram">
+                                <label for="instagram" class="inline">Instagram</label>
+                            </div>
+                            <div>
+                                <input type="checkbox" id="twitter" name="socialMedia" value="twitter">
+                                <label for="twitter" class="inline">Twitter</label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </fieldset>
+        
+        <!-- Холбоо барих мэдээлэл -->
+        <fieldset>
+            <legend>Холбоо барих мэдээлэл</legend>
+            
+            <div class="form-section">
+                <label for="address">Хаяг:</label>
+                <input type="text" id="address" name="address" value="Улаанбаатар хот, БЗД">
+            </div>
+            
+            <div class="form-section">
+                <label for="phone">Утас:</label>
+                <input type="tel" id="phone" name="phone" value="99046559">
+            </div>
+            
+            <div class="form-section">
+                <label for="email">Цахим шуудан:</label>
+                <input type="email" id="email" name="email" value="B242270058@must.edu.mn">
+            </div>
+            
+            <div class="form-section">
+                <label for="website">Хувийн вэбсайт:</label>
+                <input type="url" id="website" name="website" value="https://example.com">
+            </div>
+            
+            <div class="form-section">
+                <label for="password">Нууц үг:</label>
+                <input type="password" id="password" name="password" value="password123">
+            </div>
+        </fieldset>
+        
+        <!-- Боловсрол -->
+        <fieldset>
+            <legend>Боловсрол</legend>
+            
+            <div class="form-section">
+                <label for="educationLevel">Боловсролын түвшин:</label>
+                <select id="educationLevel" name="educationLevel">
+                    <option value="highschool">Ахлах сургууль</option>
+                    <option value="bachelor" selected>Бакалавр</option>
+                    <option value="master">Магистр</option>
+                    <option value="phd">Доктор</option>
+                </select>
+            </div>
+            
+            <div class="form-section">
+                <label for="graduationMonth">Төгссөн сар:</label>
+                <input type="month" id="graduationMonth" name="graduationMonth" value="2024-06">
+            </div>
+            
+            <div class="form-section">
+                <label for="graduationWeek">Төгссөн долоо хоног:</label>
+                <input type="week" id="graduationWeek" name="graduationWeek" value="2024-W24">
+            </div>
+            
+            <div class="form-section">
+                <label for="gpa">Дундаж үнэлгээ (GPA): <span id="gpaValue" class="range-value">3.5</span></label>
+                <input type="range" id="gpa" name="gpa" min="0" max="4" step="0.1" value="3.5">
+            </div>
+        </fieldset>
+        
+        <!-- Хобби ба сонирхол -->
+        <fieldset>
+            <legend>Хобби ба сонирхол</legend>
+            
+            <div class="form-section">
+                <label for="hobbies">Хобби:</label>
+                <textarea id="hobbies" name="hobbies" rows="4">Хөлбөмбөг тоглох, eSport-оор хичээллэх, Шатар тоглох</textarea>
+            </div>
+            
+            <div class="form-section">
+                <label for="profilePicture">Профайл зураг:</label>
+                <input type="file" id="profilePicture" name="profilePicture">
+            </div>
+            
+            <div class="form-section">
+                <label for="salaryExpectation">Цалингийн хүлээлт (сая төгрөг):</label>
+                <input type="number" id="salaryExpectation" name="salaryExpectation" min="0" max="100" step="0.5" value="2.5">
+            </div>
+        </fieldset>
+        
+        <!-- Нууц талбар -->
+        <input type="hidden" id="userId" name="userId" value="B242270058">
+        
+        <!-- Товчлуурууд -->
+        <div class="button-group">
+            <button type="submit" class="submit">Хадгалах</button>
+            <button type="reset" class="reset">Цэвэрлэх</button>
+        </div>
+    </form>
+
+    <script>
+        // Орон нутгийн цаг
+        function updateLocalTime() {
+            const now = new Date();
+            const timeString = now.toLocaleTimeString('mn-MN', {
+                hour: '2-digit',
+                minute: '2-digit',
+                second: '2-digit',
+                hour12: false
+            });
+            document.getElementById('currentTime').textContent = timeString;
+        }
+
+        // Цагыг шинэчлэх
+        updateLocalTime();
+        setInterval(updateLocalTime, 1000);
+    </script>
+</body>
+</html>

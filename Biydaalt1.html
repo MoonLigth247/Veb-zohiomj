@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="mn">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Түүхэн соёлын үе</title>
+</head>
+<body>
+    <div style="background:#2c3e50;padding:1rem 0;position:sticky;top:0;z-index:100;box-shadow:0 2px 10px rgba(0,0,0,0.1)">
+        <div style="max-width:1200px;margin:0 auto;padding:0 20px">
+            <div style="display:flex;justify-content:center;gap:10px;flex-wrap:wrap">
+                <button style="background:#3498db;color:white;border:none;padding:12px 25px;border-radius:25px;cursor:pointer;font-size:1rem;transition:all 0.3s ease" onclick="showPage('home')">Нүүр</button>
+                <button style="background:#3498db;color:white;border:none;padding:12px 25px;border-radius:25px;cursor:pointer;font-size:1rem;transition:all 0.3s ease" onclick="showPage('prehistoric')">Эртний Түүх</button>
+                <button style="background:#3498db;color:white;border:none;padding:12px 25px;border-radius:25px;cursor:pointer;font-size:1rem;transition:all 0.3s ease" onclick="showPage('medieval')">Дундад Зуун</button>
+                <button style="background:#3498db;color:white;border:none;padding:12px 25px;border-radius:25px;cursor:pointer;font-size:1rem;transition:all 0.3s ease" onclick="showPage('renaissance')">Сэргэн Мандалт</button>
+                <button style="background:#3498db;color:white;border:none;padding:12px 25px;border-radius:25px;cursor:pointer;font-size:1rem;transition:all 0.3s ease" onclick="showPage('modern')">Орчин Үе</button>
+            </div>
+        </div>
+    </div>
+
+    <div id="home" style="background:linear-gradient(135deg,#667eea 0%,#764ba2 100%);color:white;min-height:100vh;padding:2rem 0;display:block">
+        <div style="max-width:1200px;margin:0 auto;padding:0 20px">
+            <div style="text-align:center;padding:3rem 0">
+                <h1 style="font-size:3.5rem;margin-bottom:1rem;text-shadow:2px 2px 4px rgba(0,0,0,0.3)">Түүхэн Соёлын Үе</h1>
+                <p style="font-size:1.5rem;opacity:0.9">МЭӨ 5,000 - Өнөөдөр</p>
+            </div>
+            
+            <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:2rem;margin:3rem 0">
+                <div style="background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);border-radius:15px;padding:2rem;text-align:center;transition:transform 0.3s ease;border:1px solid rgba(255,255,255,0.2)">
+                    <h2 style="font-size:1.8rem;margin-bottom:1rem">Эртний Түүх</h2>
+                    <p>МЭӨ 5,000 - МЭӨ 500</p>
+                    <p>Хүмүүс суурьшлын соёл иргэншлийг бүрдүүлж, хөдөө аж ахуй, металл боловсруулалтыг эхлүүлсэн үе.</p>
+                    <button style="background:#3498db;color:white;border:none;padding:12px 25px;border-radius:25px;cursor:pointer;font-size:1rem;transition:all 0.3s ease;margin-top:1rem" onclick="showPage('prehistoric')">Дэлгэрэнгүй</button>
+                </div>
+                
+                <div style="background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);border-radius:15px;padding:2rem;text-align:center;transition:transform 0.3s ease;border:1px solid rgba(255,255,255,0.2)">
+                    <h2 style="font-size:1.8rem;margin-bottom:1rem">Дундад Зуун</h2>
+                    <p>500 - 1500</p>
+                    <p>Европт Христосын шашин төвтэй, феодалын нийгмийн бүтэц бүрэлдсэн үе.</p>
+                    <button style="background:#3498db;color:white;border:none;padding:12px 25px;border-radius:25px;cursor:pointer;font-size:1rem;transition:all 0.3s ease;margin-top:1rem" onclick="showPage('medieval')">Дэлгэрэнгүй</button>
+                </div>
+                
+                <div style="background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);border-radius:15px;padding:2rem;text-align:center;transition:transform 0.3s ease;border:1px solid rgba(255,255,255,0.2)">
+                    <h2 style="font-size:1.8rem;margin-bottom:1rem">Сэргэн Мандалт</h2>
+                    <p>1300 - 1600</p>
+                    <p>Урлаг, шинжлэх ухаан, уран бүтээлчид сэргэн хөгжсөн үе. Хүмүүнлэгийн үзэл төвтэй болсон.</p>
+                    <button style="background:#3498db;color:white;border:none;padding:12px 25px;border-radius:25px;cursor:pointer;font-size:1rem;transition:all 0.3s ease;margin-top:1rem" onclick="showPage('renaissance')">Дэлгэрэнгүй</button>
+                </div>
+                
+                <div style="background:rgba(255,255,255,0.1);backdrop-filter:blur(10px);border-radius:15px;padding:2rem;text-align:center;transition:transform 0.3s ease;border:1px solid rgba(255,255,255,0.2)">
+                    <h2 style="font-size:1.8rem;margin-bottom:1rem">Орчин Үе</h2>
+                    <p>1900 - Өнөөдөр</p>
+                    <p>Дэлхийн дайн, технологийн хурдацтай хөгжил, соёлын өөрчлөлтүүд гарсан үе.</p>
+                    <button style="background:#3498db;color:white;border:none;padding:12px 25px;border-radius:25px;cursor:pointer;font-size:1rem;transition:all 0.3s ease;margin-top:1rem" onclick="showPage('modern')">Дэлгэрэнгүй</button>
+                </div>
+            </div>
+            
+            <div style="text-align:center;margin-top:3rem;padding:2rem;border-radius:15px">
+                <p>Хүн төрөлхтний соёлын гайхамшигт түүхийг судлах газар</p>
+            </div>
+        </div>
+    </div>
+
+    <div id="prehistoric" style="background:#8B4513;color:#f5e6d3;min-height:100vh;padding:2rem 0;display:none">
+        <div style="max-width:1200px;margin:0 auto;padding:0 20px">
+            <div style="text-align:center;padding:2rem 0;background:rgba(93,64,55,0.7);border-radius:15px;margin-bottom:2rem;border:2px solid #A0522D">
+                <h1 style="font-size:3rem;margin-bottom:1rem;color:#f5e6d3;font-family:Georgia,serif">Эртний Түүх</h1>
+                <p>МЭӨ 5,000 - МЭӨ 500</p>
+            </div>
+            
+            <div style="background:rgba(245,230,211,0.9);color:#5D4037;padding:2rem;border-radius:15px;margin:2rem 0;box-shadow:0 10px 30px rgba(0,0,0,0.2)">
+                <div style="margin:2rem 0;padding:1.5rem;background:#D2B48C;border-radius:10px;border-left:5px solid #8B4513">
+                    <h2 style="margin-bottom:1rem;font-size:2rem">Эртний Түүхийн Тойм</h2>
+                    <p>Эртний түүхийн үе нь хүн төрөлхтний соёл иргэншлийн үндэс суурийг тавьсан чухал үе юм. Энэ үед хүмүүс хөдөө аж ахуйг эхлүүлж, суурьшмал амьдралыг эхлүүлсэн.</p>
+                </div>
+                
+                <div style="margin:2rem 0;padding:1.5rem;background:#D2B48C;border-radius:10px;border-left:5px solid #8B4513">
+                    <h3 style="margin:1.5rem 0 1rem 0;font-size:1.5rem">Үеийн Гол Онцлогууд</h3>
+                    <ul style="margin:1rem 0;padding-left:2rem">
+                        <li style="margin-bottom:0.5rem">Хөдөө аж ахуйн эхлэл - үр тариа тариалалт, мал аж ахуй</li>
+                        <li style="margin-bottom:0.5rem">Металл боловсруулалтын эхлэл - зэс, хүрэл зэвсэг, хэрэгсэл</li>
+                        <li style="margin-bottom:0.5rem">Бичиг үсгийн анхны хэлбэрүүд</li>
+                        <li style="margin-bottom:0.5rem">Анхны томоохон барилга байгууламжууд</li>
+                    </ul>
+                </div>
+                
+                <div style="margin:2rem 0;padding:1.5rem;background:#D2B48C;border-radius:10px;border-left:5px solid #8B4513">
+                    <h3 style="margin:1.5rem 0 1rem 0;font-size:1.5rem">Чухал Үйл Явдлууд</h3>
+                    <div style="margin:2rem 0">
+                        <div style="margin-bottom:1.5rem;padding-left:20px;border-left:3px solid #8B4513;position:relative">
+                            <div style="font-weight:bold;font-size:1.1rem">МЭӨ 10,000</div>
+                            <p>Хөдөө аж ахуйн эхлэл, гэр бүлээр амьдрах нэгдлүүд бий болсон</p>
+                        </div>
+                        <div style="margin-bottom:1.5rem;padding-left:20px;border-left:3px solid #8B4513;position:relative">
+                            <div style="font-weight:bold;font-size:1.1rem">МЭӨ 4,000</div>
+                            <p>Дугуй зэрэг чухал зүйлсийг зохион бүтээсэн</p>
+                        </div>
+                        <div style="margin-bottom:1.5rem;padding-left:20px;border-left:3px solid #8B4513;position:relative">
+                            <div style="font-weight:bold;font-size:1.1rem">МЭӨ 3,500</div>
+                            <p>Месопотамид бичиг үсэг анх гарч ирсэн</p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="medieval" style="background:#2F4F4F;color:#d5dbdb;min-height:100vh;padding:2rem 0;display:none">
+        <div style="max-width:1200px;margin:0 auto;padding:0 20px">
+            <div style="text-align:center;padding:2rem 0;background:rgba(28,46,46,0.7);border-radius:15px;margin-bottom:2rem;border:2px solid #d5dbdb;font-family:'Times New Roman',serif">
+                <h1 style="font-size:3rem;margin-bottom:1rem;color:#d5dbdb">Дундад Зуун</h1>
+                <p>500 - 1500</p>
+            </div>
+            
+            <div style="background:rgba(213,219,219,0.9);color:#2F4F4F;padding:2rem;border-radius:15px;margin:2rem 0;border-left:5px solid #2F4F4F;font-family:'Times New Roman',serif">
+                <h2 style="margin-bottom:1rem;font-size:2rem">Дундад Зууны Тойм</h2>
+                <p>Дундад зууны үе нь Ромын эзэнт гүрэн нуралтаас хойш Сэргэн мандалтын үе хүртэлх хугацааг хамардаг. Энэ үед Европт Христосын шашин маш хүчтэй нөлөөтэй байсан.</p>
+                
+                <div style="display:grid;grid-template-columns:1fr 1fr;gap:2rem;margin:2rem 0">
+                    <div style="background:white;padding:1.5rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.1)">
+                        <h3 style="margin:1.5rem 0 1rem 0;font-size:1.5rem">Үеийн Гол Онцлогууд</h3>
+                        <ul style="margin:1rem 0;padding-left:2rem">
+                            <li style="margin-bottom:0.5rem">Феодалын систем - газар, эрх мэдлийн хуваарилалт</li>
+                            <li style="margin-bottom:0.5rem">Христийн шашны төвтэй нийгэм</li>
+                            <li style="margin-bottom:0.5rem">Хот суурингууд хөгжиж, худалдааны замнал бий болсон</li>
+                            <li style="margin-bottom:0.5rem">Готик архитектур - сүм, цогчин дуганууд</li>
+                        </ul>
+                    </div>
+                    
+                    <div style="background:white;padding:1.5rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.1)">
+                        <h3 style="margin:1.5rem 0 1rem 0;font-size:1.5rem">Чухал Үйл Явдлууд</h3>
+                        <div style="margin:2rem 0">
+                            <div style="margin-bottom:1.5rem;padding-left:20px;border-left:3px solid #2F4F4F;position:relative">
+                                <div style="font-weight:bold;font-size:1.1rem">800</div>
+                                <p>Шарлемань хаан Ромын эзэн хаан өргөмжлөгдсөн</p>
+                            </div>
+                            <div style="margin-bottom:1.5rem;padding-left:20px;border-left:3px solid #2F4F4F;position:relative">
+                                <div style="font-weight:bold;font-size:1.1rem">1066</div>
+                                <p>Англид Нормандууд довтолсон</p>
+                            </div>
+                            <div style="margin-bottom:1.5rem;padding-left:20px;border-left:3px solid #2F4F4F;position:relative">
+                                <div style="font-weight:bold;font-size:1.1rem">1096-1291</div>
+                                <p>Ариун газарт хийсэн аян дайн</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="renaissance" style="background:#8B0000;color:#f9ebdf;min-height:100vh;padding:2rem 0;display:none">
+        <div style="max-width:1200px;margin:0 auto;padding:0 20px">
+            <div style="text-align:center;padding:2rem 0;background:rgba(90,0,0,0.7);border-radius:15px;margin-bottom:2rem;border:2px solid #B22222">
+                <h1 style="font-size:3rem;margin-bottom:1rem;color:#f9ebdf;font-family:Georgia,serif;font-style:italic">Сэргэн Мандалт</h1>
+                <p>1300 - 1600</p>
+            </div>
+            
+            <div style="background:rgba(249,235,223,0.9);color:#8B0000;padding:2rem;border-radius:15px;margin:2rem 0;font-family:Georgia,serif">
+                <h2 style="margin-bottom:1rem;font-size:2rem">Сэргэн Мандалтын Тойм</h2>
+                <p>Сэргэн мандалтын үе нь Европт урлаг, шинжлэх ухаан, уран бүтээлд гарсан томоохон хөгжлийг хамардаг. Энэ үед хүмүүнлэгийн үзэл төвтэй болж, хүний боломж, чадварыг онцолсон.</p>
+                
+                <h3 style="margin:1.5rem 0 1rem 0;font-size:1.5rem">Үеийн Гол Онцлогууд</h3>
+                <ul style="margin:1rem 0;padding-left:2rem">
+                    <li style="margin-bottom:0.5rem">Хүмүүнлэгийн үзэл - хүний үнэ цэнэ, чадварыг онцолсон</li>
+                    <li style="margin-bottom:0.5rem">Урлаг, уран барилгын дэлгэрэлт</li>
+                    <li style="margin-bottom:0.5rem">Шинжлэх ухааны дэвшил - ажиглалт, туршилтын арга</li>
+                    <li style="margin-bottom:0.5rem">Хэвлэх машины зохион бүтээлт - мэдлэг тархалт</li>
+                </ul>
+                
+                <h3 style="margin:1.5rem 0 1rem 0;font-size:1.5rem">Соёлын Өвийн Жишээ</h3>
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(250px,1fr));gap:1.5rem;margin:2rem 0">
+                    <div style="background:white;padding:1.5rem;border-radius:10px;text-align:center;box-shadow:0 5px 15px rgba(0,0,0,0.1);border:2px solid #8B0000">
+                        <h4 style="margin-bottom:1rem">Мона Лиза</h4>
+                        <p>Леонардо да Винчийн алдарт уран зураг</p>
+                    </div>
+                    <div style="background:white;padding:1.5rem;border-radius:10px;text-align:center;box-shadow:0 5px 15px rgba(0,0,0,0.1);border:2px solid #8B0000">
+                        <h4 style="margin-bottom:1rem">Давид</h4>
+                        <p>Микеланджелогын гайхамшигт баримал</p>
+                    </div>
+                    <div style="background:white;padding:1.5rem;border-radius:10px;text-align:center;box-shadow:0 5px 15px rgba(0,0,0,0.1);border:2px solid #8B0000">
+                        <h4 style="margin-bottom:1rem">Сикстиний Санваартан</h4>
+                        <p>Микеланджелогын гайхалтай фреск</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="modern" style="background:#006400;color:#e8f4f8;min-height:100vh;padding:2rem 0;display:none">
+        <div style="max-width:1200px;margin:0 auto;padding:0 20px">
+            <div style="text-align:center;padding:2rem 0;background:rgba(0,77,0,0.7);border-radius:15px;margin-bottom:2rem;border:2px solid #228B22">
+                <h1 style="font-size:3rem;margin-bottom:1rem;color:#e8f4f8;font-family:Arial,sans-serif">Орчин Үе</h1>
+                <p>1900 - Өнөөдөр</p>
+            </div>
+            
+            <div style="background:rgba(232,244,248,0.9);color:#006400;padding:2rem;border-radius:15px;margin:2rem 0;font-family:Arial,sans-serif">
+                <h2 style="margin-bottom:1rem;font-size:2rem">Орчин Үеийн Тойм</h2>
+                <p>Орчин үе нь технологийн хурдацтай хөгжил, дэлхийн хоёр дайн, соёлын өөрчлөлтүүдээр тодорхойлогддог. Энэ үед хүн төрөлхтний түүхэнд хамгийн их өөрчлөлтүүд гарсан.</p>
+                
+                <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(300px,1fr));gap:1.5rem;margin:2rem 0">
+                    <div style="background:white;padding:1.5rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.1);transition:transform 0.3s ease">
+                        <h3 style="margin:1.5rem 0 1rem 0;font-size:1.5rem">Технологийн Хувьсгал</h3>
+                        <p>Компьютер, интернэт, гар утас зэрэг технологийн дэвшил</p>
+                    </div>
+                    
+                    <div style="background:white;padding:1.5rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.1);transition:transform 0.3s ease">
+                        <h3 style="margin:1.5rem 0 1rem 0;font-size:1.5rem">Дэлхийн Дайн</h3>
+                        <p>I, II дугаар дэлхийн дайн болон хүйтэн дайн</p>
+                    </div>
+                    
+                    <div style="background:white;padding:1.5rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.1);transition:transform 0.3s ease">
+                        <h3 style="margin:1.5rem 0 1rem 0;font-size:1.5rem">Дэлхийжилт</h3>
+                        <p>Соёл, эдийн засгийн интеграци</p>
+                    </div>
+                    
+                    <div style="background:white;padding:1.5rem;border-radius:10px;box-shadow:0 5px 15px rgba(0,0,0,0.1);transition:transform 0.3s ease">
+                        <h3 style="margin:1.5rem 0 1rem 0;font-size:1.5rem">Байгаль Орчин</h3>
+                        <p>Уур амьсгалын өөрчлөлт, байгаль орчны асуудал</p>
+                    </div>
+                </div>
+                
+                <h3 style="margin:1.5rem 0 1rem 0;font-size:1.5rem">Чухал Үйл Явдлууд</h3>
+                <div style="margin:2rem 0">
+                    <div style="margin-bottom:1.5rem;padding-left:20px;border-left:3px solid #006400;position:relative">
+                        <div style="font-weight:bold;font-size:1.1rem">1914-1918</div>
+                        <p>Дэлхийн I дайн</p>
+                    </div>
+                    <div style="margin-bottom:1.5rem;padding-left:20px;border-left:3px solid #006400;position:relative">
+                        <div style="font-weight:bold;font-size:1.1rem">1939-1945</div>
+                        <p>Дэлхийн II дайн</p>
+                    </div>
+                    <div style="margin-bottom:1.5rem;padding-left:20px;border-left:3px solid #006400;position:relative">
+                        <div style="font-weight:bold;font-size:1.1rem">1969</div>
+                        <p>Анхны хүн саран дээр алхав</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        function showPage(pageId) {
+            var pages = document.getElementsByTagName('div');
+            for (var i = 0; i < pages.length; i++) {
+                if (pages[i].id === 'home' || pages[i].id === 'prehistoric' || pages[i].id === 'medieval' || pages[i].id === 'renaissance' || pages[i].id === 'modern') {
+                    pages[i].style.display = 'none';
+                }
+            }
+            document.getElementById(pageId).style.display = 'block';
+            window.scrollTo(0, 0);
+        }
+    </script>
+</body>
+</html>
